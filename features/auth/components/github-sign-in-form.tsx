@@ -25,13 +25,13 @@ function SubmitButton() {
 
   return (
     <Button
-    type="submit"
-    className={"w-full"}
-    size={"lg"}
-    disabled={pending}
+      type="submit"
+      className={"w-full"}
+      size={"lg"}
+      disabled={pending}
     >
-        {buttonIcon}
-        {buttonLabel}
+      {buttonIcon}
+      {buttonLabel}
     </Button>
   )
 }
@@ -42,13 +42,13 @@ type GithubSignInFormProps = {
   callbackUrl?: string;
 };
 
-export function GithubSignInForm({callbackUrl}:GithubSignInFormProps){
-    return (
-         <form action={signInWithGithub} className="w-full">
+export function GithubSignInForm({ callbackUrl }: GithubSignInFormProps) {
+  return (
+    <form action={signInWithGithub} className="w-full">
       {callbackUrl ? (
         <input type="hidden" name="callbackUrl" value={callbackUrl} />
       ) : null}
       <SubmitButton />
     </form>
-    )
+  )
 }
