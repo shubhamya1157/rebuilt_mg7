@@ -1,5 +1,5 @@
+//Made by shadcn/ui for to know mobile or desktop
 import * as React from "react"
-
 const MOBILE_BREAKPOINT = 768
 
 export function useIsMobile() {
